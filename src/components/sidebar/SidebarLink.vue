@@ -58,7 +58,7 @@ defineProps({
             {
                 'text-gray-500 hover:bg-gray-100 hover:text-gray-700 dark:hover:bg-dark-eval-2 dark:hover:text-gray-300':
                     !active,
-                'bg-purple-500 text-white shadow-lg hover:bg-purple-600':
+                'bg-blue-500 text-white shadow-lg hover:bg-blue-600':
                     active,
             },
         ]"
