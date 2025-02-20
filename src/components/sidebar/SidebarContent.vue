@@ -4,6 +4,7 @@ import PerfrectScrollbar from '@/components/PerfectScrollbar.vue'
 import SidebarLink from '@/components/sidebar/SidebarLink.vue'
 import SidebarCollapsible from '@/components/sidebar/SidebarCollapsible.vue'
 import SidebarCollapsibleItem from '@/components/sidebar/SidebarCollapsibleItem.vue'
+import { IconBrandLine } from '@tabler/icons-vue';
 
 const isCurrentRoute = (routeName) => {
     return useRouter().currentRoute.value.name == routeName
@@ -20,14 +21,35 @@ const isCurrentPath = (path) => {
         aria-label="main"
         class="relative flex max-h-full flex-1 flex-col gap-4 px-3"
     >
-        <SidebarLink
-            title="Dashboard"
+        <SidebarLink class="Dashboard-sidebar"
+            title="Доска"
             :to="{ name: 'Dashboard' }"
             :active="isCurrentRoute('Dashboard')"
             icon="tabler--dashboard"
         />
+        <SidebarLink class="Chat-sidebar"
+            title="Чвты"
+ to="{ name: 'Dashboard' }"
+            icon="tabler--message-circle"
+        />
+        <SidebarLink class="Calendar-sidebar"
+            title="Календарь"
+        
+            icon="tabler--calendar"
+        />
+        <SidebarLink class="Department-sidebar"
+            title="Отдел"
+     
+            icon="tabler--building"
+        />
+        <SidebarLink class="News-sidebar"
+            title="Лента Новостей"
 
-        <SidebarCollapsible
+            icon="tabler--news"
+        />
+      
+
+        <!-- <SidebarCollapsible
             icon="tabler--file"
             title="Pages"
             :active="isCurrentPath('/pages')"
@@ -37,9 +59,9 @@ const isCurrentPath = (path) => {
                 title="Blank"
                 :active="isCurrentRoute('Blank')"
             />
-        </SidebarCollapsible>
+        </SidebarCollapsible> -->
 
-        <SidebarCollapsible icon="tabler--shield" title="Authentication">
+        <!-- <SidebarCollapsible icon="tabler--shield" title="Authentication">
             <SidebarCollapsibleItem :to="{ name: 'Login' }" title="Login" />
             <SidebarCollapsibleItem
                 :to="{ name: 'Register' }"
@@ -61,6 +83,6 @@ const isCurrentPath = (path) => {
                 :to="{ name: 'ConfirmPassword' }"
                 title="Confirm Password"
             />
-        </SidebarCollapsible>
+        </SidebarCollapsible> -->
     </PerfrectScrollbar>
 </template>
