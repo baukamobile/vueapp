@@ -6,6 +6,8 @@ import SidebarLink from '@/components/sidebar/SidebarLink.vue'
 // import SidebarCollapsibleItem from '@/components/sidebar/SidebarCollapsibleItem.vue'
 import { IconBrandLine } from '@tabler/icons-vue';
 
+const router = useRouter()
+
 const isCurrentRoute = (routeName) => {
     return useRouter().currentRoute.value.name == routeName
 }
@@ -29,65 +31,34 @@ const isCurrentPath = (path) => {
         />
         <SidebarLink class="Chat-sidebar"
             title="Чаты"
-
+            :to="{ name: 'Chat' }"
+            :active="isCurrentRoute('Chat')"
             icon="tabler--message-circle"
         />
         <SidebarLink class="Calendar-sidebar"
             title="Календарь"
-        
+            :to="{ name: 'calendar' }"
+            :active="isCurrentRoute('calendar')"
             icon="tabler--calendar"
         />
         <SidebarLink class="Department-sidebar"
             title="Отдел"
-     
+     :to="{ name: 'department' }"
+            :active="isCurrentRoute('department')"
             icon="tabler--building"
         />
         <SidebarLink class="News-sidebar"
             title="Лента Новостей"
-
+        :to="{ name: 'news' }"
+            :active="isCurrentRoute('news')"
             icon="tabler--news"
         />
         <SidebarLink class="Reports-sidebar"
             title="Отчеты"
-
+            :to="{ name: 'reports' }"
+            :active="isCurrentRoute('reports')"
             icon="tabler--report"
         />
-      
 
-        <!-- <SidebarCollapsible
-            icon="tabler--file"
-            title="Pages"
-            :active="isCurrentPath('/pages')"
-        >
-            <SidebarCollapsibleItem
-                :to="{ name: 'Blank' }"
-                title="Blank"
-                :active="isCurrentRoute('Blank')"
-            />
-        </SidebarCollapsible> -->
-
-        <!-- <SidebarCollapsible icon="tabler--shield" title="Authentication">
-            <SidebarCollapsibleItem :to="{ name: 'Login' }" title="Login" />
-            <SidebarCollapsibleItem
-                :to="{ name: 'Register' }"
-                title="Register"
-            />
-            <SidebarCollapsibleItem
-                :to="{ name: 'VerifyEmail' }"
-                title="Verify Email"
-            />
-            <SidebarCollapsibleItem
-                :to="{ name: 'ForgotPassword' }"
-                title="Forgot Password"
-            />
-            <SidebarCollapsibleItem
-                :to="{ name: 'ResetPassword' }"
-                title="Reset Password"
-            />
-            <SidebarCollapsibleItem
-                :to="{ name: 'ConfirmPassword' }"
-                title="Confirm Password"
-            />
-        </SidebarCollapsible> -->
     </PerfrectScrollbar>
 </template>

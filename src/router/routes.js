@@ -9,9 +9,29 @@ export default [
                 component: () => import('@/views/Index.vue'),
             },
             {
-                path: '/pages/blank',
-                name: 'Blank',
-                component: () => import('@/views/pages/Blank.vue'),
+                path: '/pages/chat',
+                name: 'Chat',
+                component: ()=> import('@/views/pages/chat/Chat.vue')
+            },
+            {
+                path: '/pages/calendar',
+                name: 'calendar',
+                component: ()=> import('@/views/pages/calendar/calendar.vue')
+            },
+            {
+                path: '/pages/department',
+                name: 'department',
+                component: ()=> import('@/views/pages/department/department.vue')
+            },
+            {
+                path: '/pages/news',
+                name: 'news',
+                component: ()=> import('@/views/pages/news/news.vue')
+            },
+            {
+                path: '/pages/reports',
+                name: 'reports',
+                component: ()=> import('@/views/pages/reports/reports.vue')
             },
         ],
     },

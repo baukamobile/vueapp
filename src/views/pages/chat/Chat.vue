@@ -9,15 +9,11 @@ import Button from '@/components/Button.vue'
 <template>
     <PageWrapper>
         <template #header>
-            <h2 class="text-center">Dashboard</h2>
             <div
-                class="flex flex-col gap-4 md:flex-row md:items-center"
+                class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between"
             >
-<div>
-                <div class="dashboard" style="width: fit-content; height: fit-content; background-color: aliceblue;">
+                <h2 class="text-xl font-semibold leading-tight">Чаты</h2>
 
-                </div>
-            </div>
             </div>
         </template>
 

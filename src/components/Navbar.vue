@@ -88,7 +88,15 @@ onUnmounted(() => {
             <Dropdown align="right" width="48">
                 <template #trigger>
                     
-                   
+                    <button
+                        class="flex rounded-md border-2 border-transparent text-sm transition focus:outline-none focus:ring focus:ring-purple-500 focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark-eval-1"
+                    >
+                        <img
+                            class="h-8 w-8 rounded-md object-cover"
+                            src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg"
+                            alt="Ahmed Kamel"
+                        />
+                    </button>
                 </template>
                 <template #content>
                     <DropdownLink to="#">Log Out</DropdownLink>
