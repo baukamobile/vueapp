@@ -11,3 +11,12 @@
 .Vue-Toastification__toast--error {
     background-color: transparent !important;
 }
+.logo-task{
+    padding: 20px;
+}
+.text-xl-font-semibold-leading-tight{
+    text-align: center;
+    padding: 100px;
+    margin: 100px;
+    /* justify-content: center; */
+}

@@ -1,9 +1,9 @@
 <script setup>
 import { useRouter } from 'vue-router'
-import PerfrectScrollbar from '@/components/PerfectScrollbar.vue'
+// import PerfrectScrollbar from '@/components/PerfectScrollbar.vue'
 import SidebarLink from '@/components/sidebar/SidebarLink.vue'
-import SidebarCollapsible from '@/components/sidebar/SidebarCollapsible.vue'
-import SidebarCollapsibleItem from '@/components/sidebar/SidebarCollapsibleItem.vue'
+// import SidebarCollapsible from '@/components/sidebar/SidebarCollapsible.vue'
+// import SidebarCollapsibleItem from '@/components/sidebar/SidebarCollapsibleItem.vue'
 import { IconBrandLine } from '@tabler/icons-vue';
 
 const isCurrentRoute = (routeName) => {
@@ -25,11 +25,11 @@ const isCurrentPath = (path) => {
             title="Доска"
             :to="{ name: 'Dashboard' }"
             :active="isCurrentRoute('Dashboard')"
-            icon="tabler--dashboard"
+            icon="tabler--layout-dashboard"
         />
         <SidebarLink class="Chat-sidebar"
-            title="Чвты"
- to="{ name: 'Dashboard' }"
+            title="Чаты"
+
             icon="tabler--message-circle"
         />
         <SidebarLink class="Calendar-sidebar"
@@ -46,6 +46,11 @@ const isCurrentPath = (path) => {
             title="Лента Новостей"
 
             icon="tabler--news"
+        />
+        <SidebarLink class="Reports-sidebar"
+            title="Отчеты"
+
+            icon="tabler--report"
         />
       
 

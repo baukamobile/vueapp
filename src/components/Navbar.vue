@@ -33,6 +33,13 @@ onUnmounted(() => {
         ]"
     >
         <div class="flex items-center gap-2">
+            <nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" icon="tabler--search" placeholder="" aria-label="Search">
+    
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
             <Button
                 class="p-2 md:hidden"
                 variant="secondary"
@@ -53,8 +60,10 @@ onUnmounted(() => {
                 ></span>
             </Button>
         </div>
+        
 
         <div class="flex items-center gap-2">
+            
             <Button
                 variant="secondary"
                 @click="toggleDarkMode()"
@@ -78,12 +87,13 @@ onUnmounted(() => {
             <!-- Dropdwon -->
             <Dropdown align="right" width="48">
                 <template #trigger>
+                    
                     <button
                         class="flex rounded-md border-2 border-transparent text-sm transition focus:outline-none focus:ring focus:ring-purple-500 focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark-eval-1"
                     >
                         <img
                             class="h-8 w-8 rounded-md object-cover"
-                            src="/images/avatar.jpeg"
+                            src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg"
                             alt="Ahmed Kamel"
                         />
                     </button>
