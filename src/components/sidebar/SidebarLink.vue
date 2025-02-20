@@ -60,7 +60,7 @@ defineProps({
                     !active,
                 'bg-blue-500 text-white shadow-lg hover:bg-blue-600':
                     active,
-            },
+            },// поменяли цвет от фиолет на синий
         ]"
     >
         <span
