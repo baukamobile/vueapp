@@ -9,6 +9,7 @@ import Button from '@/components/Button.vue'
 <template>
     <PageWrapper>
         <template #header>
+
             <h2 class="text-center"><b><strong> Календарь</strong></b></h2>
             <div class="flex flex-col gap-4 md:flex-row md:items-center">
                 <div class="dashboard"></div> <!-- Тут закрываю нормально -->
@@ -451,3 +452,20 @@ const clickTestAddItem = (): void => {
 	content: "\1F30D\1F32C\1F525";
 }
 </style> -->
+
+            <!-- <h2 class="text-center">Dashboard</h2>
+            <div
+                class="flex flex-col gap-4 md:flex-row md:items-center"
+            >
+<div>
+                <div class="dashboard" style="width: fit-content; height: fit-content; background-color: aliceblue;">
+
+                </div>
+            </div>
+            </div>
+        </template>
+
+   
+    </PageWrapper>
+</template> -->
+
