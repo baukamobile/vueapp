@@ -25,10 +25,7 @@ import Button from '@/components/Button.vue'
                     :key="i"
                 >
                     <div class="flex items-center gap-2">
-                        <img
-                            class="h-10 w-10 rounded-md object-cover"
-                            src="/images/1.png"
-                        />
+                       
                         <div>
                             <h5
                                 class="text-xs text-gray-600 dark:text-gray-300"

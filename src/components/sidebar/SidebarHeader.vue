@@ -10,7 +10,7 @@ import { sidebarState } from '@/composables'
             :to="{ name: 'Dashboard' }"
             class="inline-flex items-center gap-2"
         >
-            <span class="sr-only">DashboardI</span>
+
             <Logo aria-hidden="true" class="h-auto w-10" />
         </router-link>
 

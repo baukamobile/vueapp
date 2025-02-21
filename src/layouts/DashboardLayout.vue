@@ -12,7 +12,7 @@ import PageFooter from '@/components/PageFooter.vue'
         <Sidebar />
 
         <div
-            style="transition-property: margin; transition-duration: 150ms"
+            style="transition-property: margin; transition-duration: 0ms"
             :class="[
                 'flex min-h-screen flex-col',
                 {
